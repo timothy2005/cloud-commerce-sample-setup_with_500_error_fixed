@@ -15,7 +15,7 @@ import { existsSync } from 'fs';
 import { NgExpressEngineDecorator } from '@spartacus/setup/ssr';
 
 //const ngExpressEngine = NgExpressEngineDecorator.get(engine);
-const ngExpressEngine = NgExpressEngineDecorator.get(engine, { timeout: 0 });
+const ngExpressEngine = NgExpressEngineDecorator.get(engine, { timeout: 120000 });
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
