@@ -1,3 +1,6 @@
+# Try to fix SSR issue for CCV2
+
+
 # SAP Commerce Cloud Sample Repository
 
 This sample repository contains the files and folders that are required to set up SAP Commerce Cloud.  You can clone this repository and then follow the instructions in the readme to update the example files with your specific details. 
