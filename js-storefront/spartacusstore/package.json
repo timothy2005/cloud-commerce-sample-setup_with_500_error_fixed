@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run spartacusstore:serve-ssr",
+    "dev:ssr": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 ng run spartacusstore:serve-ssr",
     "serve:ssr": "node dist/spartacusstore/server/main.js",
     "build:ssr": "ng build --prod && ng run spartacusstore:server:production && mv dist/spartacusstore-server/main.js dist/server.js || move dist\\spartacusstore-server\\main.js dist\\server.js",
     "prerender": "ng run spartacusstore:prerender"
@@ -58,6 +58,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "cross-env": "^7.0.3",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
