@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "NODE_EXTRA_CA_CERTS=./ydevelopers.pem ng run spartacusstore:serve-ssr",
-    "serve:ssr": "node dist/spartacusstore/server/main.js",
+    "dev:ssr": "ng run spartacusstore:serve-ssr",
+    "serve:ssr": "node dist/server.js",
     "build:ssr": "ng build --prod && ng run spartacusstore:server:production && mv dist/spartacusstore-server/main.js dist/server.js || move dist\\spartacusstore-server\\main.js dist\\server.js",
     "prerender": "ng run spartacusstore:prerender"
   },
