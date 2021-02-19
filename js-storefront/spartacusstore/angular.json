@@ -125,7 +125,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/spartacusstore-server",
+            "outputPath": "dist/spartacusstore/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
