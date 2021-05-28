@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   occBaseUrl:
-    'https://localhost:9002',
+    'https://www.google.com',
   prefix: '/occ/v2/' 
 };
 

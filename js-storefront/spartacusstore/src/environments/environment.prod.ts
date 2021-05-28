@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  occBaseUrl: null,
+  occBaseUrl: 'https://www.google.com',
   prefix: '/occ/v2/'
 };
