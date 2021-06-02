@@ -12,9 +12,12 @@ const occConfig: OccConfig = { backend: { occ: {} } };
 // only provide the `occ.baseUrl` key if it is explicitly configured, otherwise the value of
 // <meta name="occ-backend-base-url" > is ignored.
 // This in turn breaks the call to the API aspect in public cloud environments
-if (environment.occBaseUrl) {
-  occConfig.backend.occ.baseUrl = environment.occBaseUrl;
-}
+// if (environment.occBaseUrl) {
+//   occConfig.backend.occ.baseUrl = environment.occBaseUrl;
+// }
+
+occConfig.backend.occ.baseUrl='https://www.google.com';
+
 if (environment.prefix) {
   occConfig.backend.occ.prefix = environment.prefix;
 }
